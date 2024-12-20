@@ -895,37 +895,39 @@
         
     </div>
     <!-- Footer -->
- <footer class="bg-dark text-white text-center text-lg-start mt-5">
-        <div class="container p-4">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase"> CENTRE DE FORMATION DES FRERES DE JESUS </h5>
-                    <p>
-                        Retrouvez les enseignements, réflexions et vidéos sur la foi chrétienne pour nourrir votre âme et renforcer votre esprit.
-                    </p>
+    <script>
+        // Créer dynamiquement le pied de page avec JavaScript
+        const footer = document.createElement('footer');
+        footer.classList.add('bg-dark', 'text-white', 'text-center', 'text-lg-start', 'mt-5');
+        footer.innerHTML = `
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <p>Retrouvez les enseignements, réflexions et vidéos sur la foi chrétienne pour nourrir votre âme et renforcer votre esprit.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Liens utiles</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#home" class="text-white">Accueil</a></li>
+                            <li><a href="#versets" class="text-white">Enseignements</a></li>
+                            <li><a href="#blog" class="text-white">Blog</a></li>
+                            <li><a href="contact.html" class="text-white">Contact</a></li>
+                            <li><a href="#about" class="text-white">À propos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Suivez-nous</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#" class="text-white">Facebook</a></li>
+                            <li><a href="#" class="text-white">Instagram</a></li>
+                            <li><a href="#" class="text-white">Twitter</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Liens utiles</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li><a href="#home" class="text-white" onclick="openTab(event, 'home')">Accueil</a></li>
-                        <li><a href="#versets" class="text-white" onclick="openTab(event, 'versets')">Enseignements</a></li>
-                        <li><a href="#blog" class="text-white" onclick="openTab(event, 'blog')">Blog</a></li>
-                        <li><a href="contact.html" class="text-white" onclick="openTab(event, 'contact')">Contact</a></li>
-                        <li><a href="#about" class="text-white" onclick="openTab(event, 'about')">À propos</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Suivez-nous</h5>
-                <ul class="list-unstyled mb-0">
-                    <li><a href="#" class="text-white">Facebook</a></li>
-                    <li><a href="#" class="text-white">Instagram</a></li>
-                    <li><a href="#" class="text-white">Twitter</a></li>
-                </ul>
             </div>
-            </div>
-        </div>
-    </footer>
+        `;
+        document.body.appendChild(footer);
+    </script>
 
 
     <!-- Lien vers Bootstrap JS -->
