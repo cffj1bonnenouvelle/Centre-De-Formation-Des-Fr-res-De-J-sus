@@ -201,21 +201,31 @@ footer .container {
     </div>
 </div>
 
-      <!-- Troisième carte -->
-        <div class="col-md-6">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">Sortie Évangélique</h5>
-                    <p class="card-text">Date : Tous les Samedis</p>
-                    <p class="card-text">Heure : 15h00 - 18h00</p>
-                    <p class="card-text">Lieu : Gabon( Libreville) actuellement dans le quartier Nzeng Ayong</p>
-                    <a href="#" class="btn" onclick="toggleDetails(event, 'details1')">Voir plus</a>
-                    <p id="details1" class="card-text" style="display: none;">
-                        Le thème est : "Qu'est-ce que la vérité ?" Car le monde ignore une vérité qui sauve l'âme de l'étang de feu" ( Jean 8:32).
-                    </p>
-                </div>
-            </div>
+    <!-- Troisième carte -->
+<div class="col-md-6">
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Sortie Évangélique</h5>
+            <p class="card-text">Date : Tous les Samedis</p>
+            <p class="card-text">Heure : 15h00 - 18h00</p>
+            <p class="card-text">Lieu : Gabon (Libreville), actuellement dans le quartier Nzeng Ayong</p>
+            <a href="#" class="btn" onclick="toggleDetails(event, 'details3')">Voir plus</a>
+            <p id="details3" class="card-text" style="display: none;">
+                Le thème est : "Qu'est-ce que la vérité ?" Car le monde ignore une vérité qui sauve l'âme de l'étang de feu (Jean 8:32).
+            </p>
         </div>
+    </div>
+</div>
+
+<script>
+    // Fonction pour afficher ou masquer les détails
+    function toggleDetails(event, detailsId) {
+        event.preventDefault();
+        const details = document.getElementById(detailsId);
+        details.style.display = details.style.display === "none" ? "block" : "none";
+    }
+</script>
+
 
 <script>
     // Fonction pour afficher ou masquer les détails
