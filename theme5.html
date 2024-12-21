@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Grâce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        .header-bg {
+            background: #007BFF;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .main-content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .cta {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .cta:hover {
+            background-color: #218838;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark header-bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img3.jpg" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" onclick="openTab(event, 'home')">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#versets" onclick="openTab(event, 'versets')">ENSEIGNEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#video" onclick="openTab(event, 'video')">VIDEOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#blog" onclick="openTab(event, 'blog')">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="theme5.html" onclick="openTab(event, 'theme5')">LA GRÂCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" onclick="openTab(event, 'contact')">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container main-content">
+        <h2 class="text-center">La Grâce</h2>
+        <p class="text-center quote">"Car vous êtes sauvés par la grâce, par le moyen de la foi, et cela ne vient pas de vous, c’est le don de Dieu." - Éphésiens 2:8</p>
+
+        <div class="section-title">Introduction</div>
+        <p>La grâce est l'un des thèmes les plus puissants et importants de la chrétienté. Elle représente le don gratuit de Dieu, un don qui ne peut être mérité par nos actions, mais qui nous est accordé par son amour et sa miséricorde. Aujourd'hui, nous méditons sur cette grâce divine qui nous sauve et transforme nos vies.</p>
+
+        <div class="section-title">Qu'est-ce que la Grâce ?</div>
+        <p>La grâce est définie comme la faveur imméritée de Dieu envers l’humanité. Contrairement à ce que le monde appelle "mérite", Dieu nous donne sa grâce indépendamment de nos actions ou de nos bonnes œuvres. Elle est le fondement de notre salut, la clé qui ouvre la porte de la réconciliation avec Dieu.</p>
+
+        <blockquote>
+            <p><i>"La grâce, c'est Dieu agissant en faveur de l'homme, non pas en fonction de ses mérites, mais selon sa propre bonté." - Jean 1:16</i></p>
+        </blockquote>
+
+        <div class="section-title">L'Importance de la Grâce dans le Christianisme</div>
+        <p>La grâce est la base de notre relation avec Dieu. Elle nous permet d’être sauvés et de vivre une vie nouvelle en Christ. Nous ne pouvons pas nous sauver par nos propres efforts, mais uniquement par la grâce de Dieu. La compréhension et l’acceptation de cette grâce est ce qui transforme notre vie spirituelle.</p>
+
+        <div class="section-title">La Grâce et la Sanctification</div>
+        <p>Bien que la grâce soit donnée librement, elle n’est pas un permis pour pécher. Au contraire, la grâce nous pousse à vivre une vie de sanctification. C’est un processus continu où l’Esprit de Dieu nous transforme à l’image de Christ, nous rendant capables de vivre selon sa volonté.</p>
+
+        <div class="cta">
+            <p>Accepter la grâce de Dieu, c’est accepter sa volonté pour nos vies. Vivons pleinement cette grâce qui nous libère et nous transforme!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Rappelons-nous toujours que la grâce de Dieu nous accompagne chaque jour, nous guidant sur le chemin de la vérité et de la vie.</p>
+            <div>
+                <a href="#home" class="text-white">Accueil</a> | 
+                <a href="#versets" class="text-white">Enseignements</a> | 
+                <a href="#blog" class="text-white">Blog</a> | 
+                <a href="contact.html" class="text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lien vers Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openTab(event, tabName) {
+            const tabcontent = document.getElementsByClassName("tabcontent");
+            for (let i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
