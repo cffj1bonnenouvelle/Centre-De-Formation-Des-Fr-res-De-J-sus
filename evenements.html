@@ -162,7 +162,7 @@ footer .container {
     </nav>
 
     <!-- Contenu principal -->
-    <div class="container mt-5">
+<div class="container mt-5">
     <h2 class="text-center">Événements à Venir</h2>
     <p class="text-center">Joignez-vous à nous pour nos prochains événements.</p>
 
@@ -172,7 +172,7 @@ footer .container {
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title">Séminaire Évangélique</h5>
-                    <p class="card-text">Date : Tous les Jours</p>
+                    <p class="card-text">Date : Tous les jours</p>
                     <p class="card-text">Heure : 10h00 - 16h00</p>
                     <p class="card-text">Lieu : Centre De Formation Des Frères De Jésus</p>
                     <a href="#" class="btn" onclick="toggleDetails(event, 'details1')">Voir plus</a>
@@ -193,7 +193,24 @@ footer .container {
                     <p class="card-text">Lieu : Gabon (Lambaréné)</p>
                     <a href="#" class="btn" onclick="toggleDetails(event, 'details2')">Voir plus</a>
                     <p id="details2" class="card-text" style="display: none;">
-                        La mission vise à partager l'Évangile dans le monde entier,comme le seigneur l'ordonne dans Matthieu 28:19 "Allez, faites de toutes les nations des disciples, les baptisant au nom du Père, du Fils et du Saint-Esprit." .
+                        La mission vise à partager l'Évangile dans le monde entier, comme le Seigneur l'ordonne dans Matthieu 28:19 : 
+                        "Allez, faites de toutes les nations des disciples, les baptisant au nom du Père, du Fils et du Saint-Esprit."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Troisième carte -->
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Sortie Évangélique</h5>
+                    <p class="card-text">Date : Tous les Samedis</p>
+                    <p class="card-text">Heure : 15h00 - 18h00</p>
+                    <p class="card-text">Lieu : Gabon (Libreville), actuellement dans le quartier Nzeng Ayong</p>
+                    <a href="#" class="btn" onclick="toggleDetails(event, 'details3')">Voir plus</a>
+                    <p id="details3" class="card-text" style="display: none;">
+                        Le thème est : "Qu'est-ce que la vérité ?" Car le monde ignore une vérité qui sauve l'âme de l'étang de feu (Jean 8:32).
                     </p>
                 </div>
             </div>
@@ -201,21 +218,15 @@ footer .container {
     </div>
 </div>
 
-    <!-- Troisième carte -->
-<div class="col-md-6">
-    <div class="card mb-4">
-        <div class="card-body">
-            <h5 class="card-title">Sortie Évangélique</h5>
-            <p class="card-text">Date : Tous les Samedis</p>
-            <p class="card-text">Heure : 15h00 - 18h00</p>
-            <p class="card-text">Lieu : Gabon (Libreville), actuellement dans le quartier Nzeng Ayong</p>
-            <a href="#" class="btn" onclick="toggleDetails(event, 'details3')">Voir plus</a>
-            <p id="details3" class="card-text" style="display: none;">
-                Le thème est : "Qu'est-ce que la vérité ?" Car le monde ignore une vérité qui sauve l'âme de l'étang de feu (Jean 8:32).
-            </p>
-        </div>
-    </div>
-</div>
+<script>
+    // Fonction pour afficher ou masquer les détails
+    function toggleDetails(event, detailsId) {
+        event.preventDefault();
+        const details = document.getElementById(detailsId);
+        details.style.display = details.style.display === "none" ? "block" : "none";
+    }
+</script>
+
 
 <script>
     // Fonction pour afficher ou masquer les détails
