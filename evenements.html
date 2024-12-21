@@ -163,36 +163,57 @@ footer .container {
 
     <!-- Contenu principal -->
     <div class="container mt-5">
-        <h2 class="text-center">Événements à Venir</h2>
-        <p class="text-center">Joignez-vous à nous pour nos prochains événements.</p>
-        
-        <div class="row">
-             <div class="col-md-6">
-        <div class="card mb-4">
-                    <div class="card-body">
-        <h5 class="card-title">Séminaire Évangélique </h5>
-                        <p class="card-text">Date : Tous les Samedis</p>
-                        <p class="card-text">Heure : 10h00 - 16h00</p>
-                        <p class="card-text">Lieu : Centre De Formation Des Frères De Jésus</p>
-                       <a href="#" class="btn" onclick="toggleDetails(event, 'details1')">Voir plus</a>
-                         <p id="details1" class="card-text" style="display: none;">Nous sommes disponibles chaque jour de la semaine, à toute heure, pour accueillir toutes les âmes désirant d'écouter l'Évangile. N'hésitez pas à nous contacter.</p>
-                    </div>
-                </div>
-            </div>
+    <h2 class="text-center">Événements à Venir</h2>
+    <p class="text-center">Joignez-vous à nous pour nos prochains événements.</p>
 
-             <div class="row">
-                  <div class="col-md-6">
+    <div class="row">
+        <!-- Première carte -->
+        <div class="col-md-6">
             <div class="card mb-4">
-                    <div class="card-body">
-                    <h5 class="card-title">Mission Evangélique en cours </h5>
-                        <p class="card-text">Date : Début Décembre 2024</p>
-                        <p class="card-text">Heure : Indéfinie </p>
-                        <p class="card-text">Lieu :Gabon ( Lambaréné) </p>
-                        <a href="#" class="btn" onclick="toggleDetails(event, 'details1')">Voir plus</a>
-                         
-                    </div>
+                <div class="card-body">
+                    <h5 class="card-title">Séminaire Évangélique</h5>
+                    <p class="card-text">Date : Tous les Samedis</p>
+                    <p class="card-text">Heure : 10h00 - 16h00</p>
+                    <p class="card-text">Lieu : Centre De Formation Des Frères De Jésus</p>
+                    <a href="#" class="btn" onclick="toggleDetails(event, 'details1')">Voir plus</a>
+                    <p id="details1" class="card-text" style="display: none;">
+                        Nous sommes disponibles chaque jour de la semaine, à toute heure, pour accueillir toutes les âmes désirant écouter l'Évangile. N'hésitez pas à nous contacter.
+                    </p>
                 </div>
             </div>
+        </div>
+
+        <!-- Deuxième carte -->
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Mission Évangélique en cours</h5>
+                    <p class="card-text">Date : Début Décembre 2024</p>
+                    <p class="card-text">Heure : Indéfinie</p>
+                    <p class="card-text">Lieu : Gabon (Lambaréné)</p>
+                    <a href="#" class="btn" onclick="toggleDetails(event, 'details2')">Voir plus</a>
+                    <p id="details2" class="card-text" style="display: none;">
+                        La mission vise à partager l'Évangile dans les régions éloignées, en apportant également un soutien moral et spirituel aux habitants.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Fonction pour afficher ou masquer les détails
+    function toggleDetails(event, detailsId) {
+        event.preventDefault();
+        const details = document.getElementById(detailsId);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
 
 
            
